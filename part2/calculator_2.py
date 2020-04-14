@@ -28,7 +28,7 @@ class Token(object):
         return self.__str__()
 
 
-class Interceptor(object):
+class Interpreter(object):
     def __init__(self, text):
         # 输入,比如1+2
         self.text = text
@@ -148,7 +148,7 @@ def main():
         # 输入为空的情况
         if not text:
             continue
-        interceptor = Interceptor(text)
+        interceptor = Interpreter(text)
         result = interceptor.expr()
         print(result)
 
