@@ -148,8 +148,8 @@ def main():
         # 输入为空的情况
         if not text:
             continue
-        interceptor = Interpreter(text)
-        result = interceptor.expr()
+        interpreter = Interpreter(text)
+        result = interpreter.expr()
         print(result)
 
 
