@@ -103,8 +103,8 @@ def main():
         if not text:
             continue
 
-        interceptor = Interpreter(text)
-        result = interceptor.expr()
+        interpreter = Interpreter(text)
+        result = interpreter.expr()
         print(result)
 
 
